@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "SmartGoat",
+    "slug": "smartgoat",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#059669",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.smartgoat.app"
+    },
+    "android": {
+      "package": "com.smartgoat.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "SmartGoat memerlukan kamera untuk memindai QR/barcode tag ternak.",
+          "recordAudioAndroid": false
+        }
+      ],
+      "expo-sharing"
+    ]
+  }
+}
